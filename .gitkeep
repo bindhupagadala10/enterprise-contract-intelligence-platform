@@ -1,0 +1,11 @@
+data/raw/.gitkeep
+
+data/processed/.gitkeep
+
+data/processed/dir/.gitkeep
+
+data/processed/chunks/.gitkeep
+
+logs/.gitkeep
+
+models/.gitkeep
