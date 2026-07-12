@@ -45,10 +45,7 @@ for index, document in enumerate(manifest, start=1):
             successful += 1
             continue
 
-        pdf = (
-            Path("data/raw/CUAD_v1")
-            / document["relative_path"]
-        )
+        pdf = Path("data/raw/CUAD_v1") / document["relative_path"].replace("\\", "/")
 
         print(f"\n[{index}/{total}] {pdf.name}")
 

@@ -10,6 +10,7 @@ with open(MANIFEST, "r", encoding="utf-8") as f:
 
 document_info = manifest[0]
 
+# Now using the Linux-native paths directly from the newly generated manifest
 pdf = Path("data/raw/CUAD_v1") / document_info["relative_path"]
 
 docling_document = ParserService().parse_document(pdf)
